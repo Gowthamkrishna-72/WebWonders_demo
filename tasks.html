@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow - Tasks</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>
+                <i class="fa-solid fa-check-double"></i>
+                TaskFlow
+            </h2>
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="tasks.html">
+                    <i class="fa-solid fa-list-check"></i>
+                    Tasks
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    <i class="fa-solid fa-folder"></i>
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="analytics.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="profile">
+
+            <div class="circle" id="userInitial">
+                G
+            </div>
+
+            <div>
+
+                <h4 id="userName">
+                    Guest User
+                </h4>
+
+                <p id="userEmail">
+                    Not Logged In
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+
+            <div class="search">
+
+                <input
+                    type="text"
+                    placeholder="Search tasks...">
+
+            </div>
+
+            <div class="nav-right">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <i class="fa-regular fa-moon"></i>
+
+                <button>
+                    + New Task
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Heading -->
+
+        <div class="title">
+
+            <div>
+
+                <h1>Tasks Board</h1>
+
+                <p>
+                    Drag and organize your work.
+                </p>
+
+            </div>
+
+            <div>
+
+                <button class="filter-btn">
+                    Filter
+                </button>
+
+                <button class="filter-btn">
+                    Sort
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= KANBAN ================= -->
+
+        <div class="kanban">
+
+            <!-- TO DO -->
+
+            <div class="column">
+
+                <h3>To Do</h3>
+
+                <div class="task-card">
+
+                    <h4>Create Landing Page</h4>
+
+                    <p>Marketing Website</p>
+
+                    <span class="high">
+                        High
+                    </span>
+
+                    <small>May 25</small>
+
+                </div>
+
+                <div class="task-card">
+
+                    <h4>Write Blog</h4>
+
+                    <p>Content Marketing</p>
+
+                    <span class="medium">
+                        Medium
+                    </span>
+
+                    <small>May 27</small>
+
+                </div>
+
+                <div class="task-card">
+
+                    <h4>Research Competitors</h4>
+
+                    <p>Business</p>
+
+                    <span class="low">
+                        Low
+                    </span>
+
+                    <small>May 31</small>
+
+                </div>
+
+                <button class="add-btn">
+                    + Add Task
+                </button>
+
+            </div>
+                        <!-- IN PROGRESS -->
+
+            <div class="column">
+
+                <h3>In Progress</h3>
+
+                <div class="task-card">
+
+                    <h4>UI/UX Design</h4>
+
+                    <p>Mobile Application</p>
+
+                    <span class="high">
+                        High
+                    </span>
+
+                    <small>May 24</small>
+
+                </div>
+
+                <div class="task-card">
+
+                    <h4>API Integration</h4>
+
+                    <p>Backend</p>
+
+                    <span class="high">
+                        High
+                    </span>
+
+                    <small>May 26</small>
+
+                </div>
+
+                <div class="task-card">
+
+                    <h4>Database Schema</h4>
+
+                    <p>Backend</p>
+
+                    <span class="medium">
+                        Medium
+                    </span>
+
+                    <small>May 28</small>
+
+                </div>
+
+                <button class="add-btn">
+                    + Add Task
+                </button>
+
+            </div>
+
+            <!-- DONE -->
+
+            <div class="column">
+
+                <h3>Done</h3>
+
+                <div class="task-card">
+
+                    <h4>Project Setup</h4>
+
+                    <p>TaskFlow</p>
+
+                    <span class="low">
+                        Low
+                    </span>
+
+                    <small>May 20</small>
+
+                </div>
+
+                <div class="task-card">
+
+                    <h4>Requirements Gathering</h4>
+
+                    <p>TaskFlow</p>
+
+                    <span class="medium">
+                        Medium
+                    </span>
+
+                    <small>May 18</small>
+
+                </div>
+
+                <div class="task-card">
+
+                    <h4>Team Meeting</h4>
+
+                    <p>TaskFlow</p>
+
+                    <span class="low">
+                        Low
+                    </span>
+
+                    <small>May 19</small>
+
+                </div>
+
+                <div class="task-card">
+
+                    <h4>Setup Authentication</h4>
+
+                    <p>Backend</p>
+
+                    <span class="high">
+                        High
+                    </span>
+
+                    <small>May 22</small>
+
+                </div>
+
+                <button class="add-btn">
+                    + Add Task
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- End Kanban -->
+
+    </div>
+
+</div>
+<!-- ================= EDIT TASK MODAL ================= -->
+
+<div id="taskModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2>Edit Task</h2>
+
+        <form>
+
+            <label>Task Name</label>
+            <input type="text" placeholder="Enter task name">
+
+            <label>Description</label>
+            <textarea placeholder="Task Description"></textarea>
+
+            <label>Priority</label>
+
+            <select>
+
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+
+            </select>
+
+            <label>Status</label>
+
+            <select>
+
+                <option>To Do</option>
+                <option>In Progress</option>
+                <option>Done</option>
+
+            </select>
+
+            <label>Due Date</label>
+
+            <input type="date">
+
+            <button type="submit" class="save-btn">
+
+                Save Task
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- ================= USER PROFILE ================= -->
+
+<script>
+
+const savedName = localStorage.getItem("username");
+const savedEmail = localStorage.getItem("useremail");
+
+if(savedName){
+
+    document.getElementById("userName").textContent = savedName;
+
+    document.getElementById("userInitial").textContent =
+    savedName.charAt(0).toUpperCase();
+
+}
+
+if(savedEmail){
+
+    document.getElementById("userEmail").textContent = savedEmail;
+
+}
+
+</script>
+
+<!-- Main JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
