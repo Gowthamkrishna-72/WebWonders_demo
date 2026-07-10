@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+                <h2>
+                    <i class="fa-solid fa-check-double"></i>
+                    TaskFlow
+                </h2>
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tasks.html">
+                        <i class="fa-solid fa-list-check"></i>
+                        Tasks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-solid fa-folder"></i>
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="analytics.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        Analytics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="profile">
+
+            <div class="circle">
+                A
+            </div>
+
+            <div>
+
+                <h4>Arjun Verma</h4>
+
+                <p id="userEmail">
+                    arjun@email.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- NAVBAR -->
+
+        <div class="navbar">
+
+            <div class="search">
+
+                <input
+                    type="text"
+                    placeholder="Search tasks or projects...">
+
+            </div>
+
+            <div class="nav-right">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <i id="darkModeBtn"
+                    class="fa-regular fa-moon"></i>
+
+                <button id="newTaskBtn">
+
+                    + New Task
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- WELCOME -->
+
+        <section class="welcome">
+
+            <h1>
+                Welcome back, Arjun 👋
+            </h1>
+
+            <p>
+
+                Here's what's happening today.
+
+            </p>
+
+        </section>
+
+        <!-- DASHBOARD CARDS -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h4>Total Tasks</h4>
+
+                <h2>24</h2>
+
+                <span>+12% This Week</span>
+
+            </div>
+
+            <div class="card">
+
+                <h4>Completed</h4>
+
+                <h2>16</h2>
+
+                <span>67% Completed</span>
+
+            </div>
+
+            <div class="card">
+
+                <h4>In Progress</h4>
+
+                <h2>5</h2>
+
+                <span>On Track</span>
+
+            </div>
+
+            <div class="card">
+
+                <h4>Pending</h4>
+
+                <h2>3</h2>
+
+                <span>Needs Attention</span>
+
+            </div>
+
+        </section>
+
+        <!-- CONTENT -->
+
+        <section class="sections">
+
+            <!-- DEADLINES -->
+
+            <div class="box">
+
+                <div class="title">
+
+                    <h3>Upcoming Deadlines</h3>
+
+                    <a href="tasks.html">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <div class="task">
+
+                    <div>
+
+                        <h4>UI Design Review</h4>
+
+                        <p>24 May</p>
+
+                    </div>
+
+                    <span class="high">
+
+                        High
+
+                    </span>
+
+                </div>
+
+                <div class="task">
+
+                    <div>
+
+                        <h4>API Integration</h4>
+
+                        <p>26 May</p>
+
+                    </div>
+
+                    <span class="medium">
+
+                        Medium
+
+                    </span>
+
+                </div>
+
+                <div class="task">
+
+                    <div>
+
+                        <h4>Testing Phase</h4>
+
+                        <p>29 May</p>
+
+                    </div>
+
+                    <span class="low">
+
+                        Low
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- RECENT ACTIVITY -->
+
+            <div class="box">
+
+                <div class="title">
+
+                    <h3>
+
+                        Recent Activity
+
+                    </h3>
+
+                </div>
+
+                <ul class="activity">
+
+                    <li>✅ Login Successful</li>
+
+                    <li>📁 Project Updated</li>
+
+                    <li>🎨 New UI Uploaded</li>
+
+                    <li>✔ Task Completed</li>
+
+                    <li>🚀 Deployment Started</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- BANNER -->
+
+        <section class="banner">
+
+            <h2>
+
+                Stay Productive 🚀
+
+            </h2>
+
+            <p>
+
+                Organize your work, manage projects and complete your goals with TaskFlow.
+
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
