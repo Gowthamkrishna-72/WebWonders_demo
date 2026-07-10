@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TaskFlow - Settings</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+<h2><i class="fa-solid fa-check-double"></i> TaskFlow</h2>
+</div>
+
+<ul class="menu">
+
+<li>
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="tasks.html">
+<i class="fa-solid fa-list-check"></i>
+Tasks
+</a>
+</li>
+
+<li>
+<a href="projects.html">
+<i class="fa-solid fa-folder"></i>
+Projects
+</a>
+</li>
+
+<li>
+<a href="analytics.html">
+<i class="fa-solid fa-chart-line"></i>
+Analytics
+</a>
+</li>
+
+<li class="active">
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+</li>
+
+</ul>
+
+<div class="profile">
+
+<div class="circle">A</div>
+
+<div>
+<h4>Arjun Verma</h4>
+<p>arjun@email.com</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<div class="search">
+<input type="text" placeholder="Search Settings...">
+</div>
+
+<div class="nav-right">
+
+<i class="fa-regular fa-bell"></i>
+
+<button>Save Changes</button>
+
+</div>
+
+</div>
+
+<h1>Settings</h1>
+
+<p class="subtitle">
+Manage your account preferences and application settings.
+</p>
+
+<div class="settings-container">
+
+<!-- Profile Settings -->
+
+<div class="settings-card">
+
+<h2>
+<i class="fa-solid fa-user"></i>
+Profile Information
+</h2>
+
+<label>Full Name</label>
+
+<input
+type="text"
+value="Arjun Verma">
+
+<label>Email Address</label>
+
+<input
+type="email"
+value="arjun@email.com">
+
+<label>Phone Number</label>
+
+<input
+type="text"
+placeholder="+91 9876543210">
+</div>
+
+<!-- Security Settings -->
+
+<div class="settings-card">
+
+    <h2>
+        <i class="fa-solid fa-lock"></i>
+        Security
+    </h2>
+
+    <label>Current Password</label>
+    <input type="password" placeholder="Enter current password">
+
+    <label>New Password</label>
+    <input type="password" placeholder="Enter new password">
+
+    <label>Confirm Password</label>
+    <input type="password" placeholder="Confirm new password">
+
+</div>
+
+<!-- Notifications -->
+
+<div class="settings-card">
+
+    <h2>
+        <i class="fa-solid fa-bell"></i>
+        Notifications
+    </h2>
+
+    <div class="setting-row">
+        <span>Email Notifications</span>
+        <input type="checkbox" checked>
+    </div>
+
+    <div class="setting-row">
+        <span>Desktop Notifications</span>
+        <input type="checkbox" checked>
+    </div>
+
+    <div class="setting-row">
+        <span>SMS Notifications</span>
+        <input type="checkbox">
+    </div>
+
+</div>
+
+<!-- Appearance -->
+
+<div class="settings-card">
+
+    <h2>
+        <i class="fa-solid fa-palette"></i>
+        Appearance
+    </h2>
+
+    <div class="setting-row">
+        <span>Dark Mode</span>
+        <input type="checkbox" id="darkMode">
+    </div>
+
+    <label>Language</label>
+
+    <select>
+
+        <option>English</option>
+        <option>Hindi</option>
+        <option>Spanish</option>
+        <option>French</option>
+
+    </select>
+
+    <label>Time Zone</label>
+
+    <select>
+
+        <option>Asia/Kolkata</option>
+        <option>UTC</option>
+        <option>America/New_York</option>
+        <option>Europe/London</option>
+
+    </select>
+
+</div>
+
+<!-- Preferences -->
+
+<div class="settings-card">
+
+    <h2>
+        <i class="fa-solid fa-sliders"></i>
+        Preferences
+    </h2>
+
+    <label>Default Dashboard</label>
+
+    <select>
+
+        <option>Dashboard</option>
+        <option>Projects</option>
+        <option>Tasks</option>
+        <option>Analytics</option>
+
+    </select>
+
+    <label>Task View</label>
+
+    <select>
+
+        <option>Kanban Board</option>
+        <option>List View</option>
+        <option>Calendar View</option>
+
+    </select>
+
+</div>
+<!-- Account Actions -->
+
+<div class="settings-card">
+
+    <h2>
+        <i class="fa-solid fa-user-gear"></i>
+        Account Actions
+    </h2>
+
+    <button class="save-btn">
+        <i class="fa-solid fa-floppy-disk"></i>
+        Save Changes
+    </button>
+
+    <button class="filter-btn" style="width:100%; margin-top:15px;">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Logout
+    </button>
+
+    <button style="
+        width:100%;
+        margin-top:15px;
+        padding:12px;
+        background:#e53935;
+        color:white;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        font-size:16px;">
+        <i class="fa-solid fa-trash"></i>
+        Delete Account
+    </button>
+
+</div>
+
+</div>
+<!-- End Settings Container -->
+
+</div>
+<!-- End Main -->
+
+</div>
+<!-- End Container -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
